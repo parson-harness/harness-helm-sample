@@ -7,6 +7,8 @@ replicaCount: 1
 image:
   registry: docker.io  
   repository: parsontodd/nginx-hello
+  pullPolicy: Always
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
