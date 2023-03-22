@@ -4,6 +4,7 @@ metadata:
   name: {{ include "harness-default.fullname" . }}
   labels:
     {{- include "harness-default.labels" . | nindent 4 }}
+  namespace: {{ .Release.Namespace }}
 spec:
   type: {{ .Values.service.type }}
   ports:

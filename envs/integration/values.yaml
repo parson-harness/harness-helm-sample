@@ -5,6 +5,7 @@
 replicaCount: 1
 
 image: <+artifact.image>
+namespace: <+infra.namespace>
 
 imagePullSecrets: []
 nameOverride: ""
