@@ -5,9 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: parsontodd/nginx-hello
+  repository: nginx
   pullPolicy: Always
-  tag: 8
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
