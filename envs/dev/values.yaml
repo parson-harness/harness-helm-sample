@@ -8,7 +8,7 @@ image:
   registry: docker.io  
   repository: parsontodd/nginx-hello
   pullPolicy: Always
-  tag: ""
+  tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
