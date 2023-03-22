@@ -4,7 +4,9 @@
 
 replicaCount: 1
 
-image: nginx-hello
+image:
+  registry: docker.io  
+  repository: parsontodd/nginx-hello
 
 imagePullSecrets: []
 nameOverride: ""
