@@ -5,10 +5,9 @@
 replicaCount: 1
 
 image:
-  registry: docker.io  
-  repository: parsontodd/nginx-hello
+  repository: docker.io/parsontodd/nginx-hello
   pullPolicy: Always
-  tag: latest
+  tag: 8
 
 imagePullSecrets: []
 nameOverride: ""
