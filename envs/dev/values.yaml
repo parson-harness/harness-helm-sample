@@ -5,6 +5,7 @@
 replicaCount: 1
 
 image: parsontodd/nginx-hello:8
+namespace: harness-nonprod
 
 imagePullSecrets: []
 nameOverride: ""
