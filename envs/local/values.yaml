@@ -4,8 +4,8 @@
 
 replicaCount: 1
 
-image: <+artifact.image>
-namespace: <+infra.namespace>
+image: parsontodd/nginx-hello:latest
+namespace: harness-dev
 
 imagePullSecrets: []
 nameOverride: ""
