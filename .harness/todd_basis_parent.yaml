@@ -1,0 +1,13 @@
+pipeline:
+  name: todd basis parent
+  identifier: todd_basis_parent
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Harness Dynamic Provisioning
+        identifier: Harness_Dynamic_Provisioning
+        template:
+          templateRef: account.Dynamic_Service_Creation
+          versionLabel: "1.0"
