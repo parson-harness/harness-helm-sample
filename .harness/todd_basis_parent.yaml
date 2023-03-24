@@ -32,3 +32,7 @@ pipeline:
       type: String
       description: ""
       value: <+input>
+    - name: infra
+      type: String
+      description: ""
+      value: <+INFRA_KEY>
