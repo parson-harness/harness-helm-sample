@@ -11,3 +11,24 @@ pipeline:
         template:
           templateRef: account.Dynamic_Service_Creation
           versionLabel: "1.0"
+  variables:
+    - name: buildArtifact
+      type: String
+      description: ""
+      value: <+input>
+    - name: createEnv
+      type: String
+      description: ""
+      value: <+input>
+    - name: env
+      type: String
+      description: ""
+      value: <+input>
+    - name: createSvc
+      type: String
+      description: ""
+      value: <+input>
+    - name: svc
+      type: String
+      description: ""
+      value: <+input>
