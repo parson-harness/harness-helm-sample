@@ -1,0 +1,38 @@
+pipeline:
+  name: todd basis parent
+  identifier: todd_basis_parent
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Harness Dynamic Provisioning
+        identifier: Harness_Dynamic_Provisioning
+        template:
+          templateRef: account.Dynamic_Service_Creation
+          versionLabel: "1.0"
+  variables:
+    - name: buildArtifact
+      type: String
+      description: ""
+      value: <+input>
+    - name: createEnv
+      type: String
+      description: ""
+      value: <+input>
+    - name: env
+      type: String
+      description: ""
+      value: <+input>
+    - name: createSvc
+      type: String
+      description: ""
+      value: <+input>
+    - name: svc
+      type: String
+      description: ""
+      value: <+input>
+    - name: infra
+      type: String
+      description: ""
+      value: <+INFRA_KEY>
