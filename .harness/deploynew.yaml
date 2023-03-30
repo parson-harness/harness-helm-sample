@@ -1,0 +1,14 @@
+pipeline:
+  name: deploy-new
+  identifier: deploynew
+  template:
+    templateRef: deploytemplate
+    versionLabel: "1.0"
+    templateInputs:
+      variables:
+        - name: svc
+          type: String
+          value: <+input>
+  tags: {}
+  projectIdentifier: default_project
+  orgIdentifier: default
