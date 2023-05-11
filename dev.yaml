@@ -4,7 +4,6 @@
 
 replicaCount: 1
 
-#image: <+artifact.image>
 image:
   repository: nginx
   pullPolicy: Always
