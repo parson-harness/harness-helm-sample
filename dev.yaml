@@ -4,7 +4,12 @@
 
 replicaCount: 1
 
-image: <+artifact.image>
+#image: <+artifact.image>
+image:
+  repository: nginx
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
 namespace: <+infra.namespace>
 
 imagePullSecrets: []
