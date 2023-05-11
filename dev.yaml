@@ -4,7 +4,7 @@
 
 replicaCount: 1
 
-image: <+artifact.image>
+image: <+artifact.image>:<+artifact.tag>
 namespace: <+infra.namespace>
 
 imagePullSecrets: []
